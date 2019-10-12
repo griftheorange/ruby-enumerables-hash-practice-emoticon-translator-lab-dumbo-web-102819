@@ -3,7 +3,9 @@ require "yaml"
 def load_library(path)
   file = YAML.load_file(path)
   emoticons = {
-    :get_meaning => {},
+    :get_meaning => file.reduce({}){|memo, (meaning, english_then_japanese_emoji_array)|
+      memo[english_then_japanese_emoji_array[1]] = meaning
+    },
     :get_emoticon => {}
   }
   
