@@ -3,12 +3,13 @@ require "yaml"
 def load_library(path)
   file = YAML.load_file(path)
   emoticons = {
-    :get_meaning => {},
+    :get_meaning => file.values
+    },
     :get_emoticon => {}
   }
   
   
-  emoticon
+  emoticons
 end
 
 def get_japanese_emoticon
