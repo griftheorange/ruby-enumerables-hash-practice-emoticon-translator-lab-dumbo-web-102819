@@ -21,6 +21,3 @@ end
 def get_english_meaning
   # code goes here
 end
-
-me = load_library('emoticons.yml')
-puts me
