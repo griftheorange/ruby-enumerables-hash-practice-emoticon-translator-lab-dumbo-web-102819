@@ -12,5 +12,5 @@ def get_english_meaning
   # code goes here
 end
 
-emoticon = load_library("../emoticons.yml")
+emoticon = load_library("emoticons.yml")
 puts emoticon
