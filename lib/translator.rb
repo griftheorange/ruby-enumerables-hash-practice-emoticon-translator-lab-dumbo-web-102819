@@ -8,6 +8,7 @@ def load_library(path)
     },
     :get_emoticon => {}
   }
+  emoticons
   
 end
 
