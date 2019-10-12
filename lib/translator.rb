@@ -8,7 +8,7 @@ def load_library(path)
       memo
     },
     :get_emoticon => file.reduce({}){|memo, (meaning, english_then_japanese_emoji_array)|
-      memo[english_then_japanese_emoji_array[0]] = meaning
+      memo[english_then_japanese_emoji_array[0]] = english_then_japanese_emoji_array[1]
       memo
     }
   }
