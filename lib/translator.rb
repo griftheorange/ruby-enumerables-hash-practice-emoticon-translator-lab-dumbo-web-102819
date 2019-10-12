@@ -3,7 +3,8 @@ require "yaml"
 def load_library(path)
   file = YAML.load_file(path)
   emoticons = {
-    :get_meaning => 
+    :get_meaning => file.reduce({}){|memo, (key, value)|
+      memo[value] = key
     },
     :get_emoticon => {}
   }
