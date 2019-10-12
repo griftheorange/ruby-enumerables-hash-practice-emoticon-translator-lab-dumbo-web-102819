@@ -7,6 +7,8 @@ def load_library(path)
     :get_emoticon => {}
   }
   
+  
+  emoticon
 end
 
 def get_japanese_emoticon
