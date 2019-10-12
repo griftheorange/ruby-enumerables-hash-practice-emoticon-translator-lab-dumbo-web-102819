@@ -8,7 +8,7 @@ def load_library(path)
         memo[english_then_japanese_emoji_array[1]] = meanings
       }
     },
-    :get_emoticon =>
+    :get_emoticon => {}
   }
   
 end
