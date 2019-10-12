@@ -11,6 +11,3 @@ end
 def get_english_meaning
   # code goes here
 end
-
-emoticons = load_library
-puts emoticons
